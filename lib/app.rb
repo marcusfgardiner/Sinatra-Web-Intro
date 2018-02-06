@@ -32,7 +32,7 @@ get "/cat-naming-form" do
   erb(:cat_form)
 end
 
-post "/cat-naming-form" do
+post "/named-cat" do
   @time = Time.now
   p params
   @names = params[:name]
