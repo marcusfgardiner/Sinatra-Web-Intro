@@ -1,9 +1,9 @@
+<% if @names %>
 <h1>
-<%= Time.now %>
- My name is <%=
-["Amigo", "Oscar", "Marcus", "Hunor"].sample
- %>
+<%= @time %>
+ My name is <%= @names %>
 </h1>
+ <% end %>
 
 <div style='border: 3px dashed red'>
   <img src='http://bit.ly/1eze8aE'/>

@@ -14,7 +14,16 @@ get "/bensmagicbox" do
   "My box is full of magic things"
 end
 
-get "/cat" do
+get "/random-cat" do
+  @time = Time.now
+  @names = ["Amigo", "Oscar", "Marcus", "Hunor"].sample
+  erb(:index)
+end
+
+get "/named-cat" do
+  @time = Time.now
+  p params
+  @names = params[:name]
   erb(:index)
 end
 
