@@ -15,10 +15,10 @@ get "/bensmagicbox" do
 end
 
 get "/cat" do
-"<div style='border: 5px dashed red'>
-  <img src='http://bit.ly/1eze8aE'/>
-</div>"
+  erb(:index)
 end
 
-
+get "/football" do
+  erb(:football)
+end
 # send_file('/root/dev/notes/images/'+params[:file], :disposition => 'inline')
