@@ -27,6 +27,13 @@ get "/named-cat" do
   erb(:index)
 end
 
+get "/named-cat2" do
+  @time = Time.now
+  p params
+  @names = params[:name]
+  erb(:index)
+end
+
 get "/football" do
   erb(:football)
 end
